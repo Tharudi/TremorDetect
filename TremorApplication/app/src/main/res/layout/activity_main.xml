@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="401dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/tremord"
+        android:background="@drawable/tremorc" />
+
+
+
+    <Button
+        android:id="@+id/phistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="50px"
+        android:enabled="true"
+        android:background="@color/colorPrimary"
+        android:text="Patient History" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:text="WIFI Enable" />
+
+    <Button
+        android:id="@+id/srt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="400dp"
+        android:background="@color/colorPrimary"
+        android:text="Tremor Detection I" />
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".patientHistory">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="401dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/tremord"
+        android:background="@drawable/tremorc" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Patient No"
+        android:layout_below="@id/imageView5"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="100"
+        android:layout_below="@+id/imageView5"
+        android:textSize="17sp"
+         />
+    <TextView
+        android:id="@+id/monthno"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Month"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:textSize="17sp"
+       />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/editText1"
+        android:textSize="17sp"
+         />
+    <!--//week 1-->
+    <TextView
+        android:id="@+id/wk1"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Week 1"
+        android:layout_below="@id/monthno"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/wk1e"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/editText2"
+        android:textSize="17sp"
+       />
+    <!--//week 2-->
+    <TextView
+        android:id="@+id/week2"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/wk1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:text="Week 2"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/wk2e"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/wk1e"
+        android:textSize="17sp"
+         />
+    //week 3-->
+    <TextView
+        android:id="@+id/week3"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Week 3"
+        android:layout_below="@id/week2"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/wk3e"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/wk2e"
+        android:textSize="17sp"
+         />
+
+    <!--//week 4-->
+    <TextView
+        android:id="@+id/week4"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Week 4"
+        android:layout_below="@id/week3"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:textSize="17sp"
+         />
+
+    <EditText
+        android:id="@+id/wk4e"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/wk3e"
+        android:textSize="17sp"
+       />
+    //week 5
+    <TextView
+        android:id="@+id/week5"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Week 5"
+        android:layout_below="@id/week4"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/wk5e"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@+id/wk4e"
+        android:textSize="17sp"
+         />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Report"
+        android:layout_marginTop="540dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/viewprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:text="View Progress"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".tremor">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="401dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/tremord"
+        android:background="@drawable/tremorc" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/imageView5"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Patient Name"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:text="Tom"
+         />
+    <TextView
+        android:id="@+id/weekno"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Date"
+        android:textSize="17sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/textView"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="6/26/2019"
+        android:textSize="17sp"
+        android:layout_below="@+id/editText1"
+        />
+
+
+
+    <!--<Switch-->
+        <!--android:id="@+id/switch1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:switchMinWidth="56dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Le:"-->
+        <!--android:checked="true"-->
+        <!--android:textOff="OFF"-->
+        <!--android:textOn="ON"-->
+        <!--android:layout_below="@+id/weekno"/>-->
+
+    <RadioGroup
+        android:id="@+id/radiohand"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+
+        android:layout_marginTop="30dp">
+
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:text="Right Hand"
+            android:textSize="17sp"
+           />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weekno"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="Left Hand"
+
+            android:textSize="17sp"/>
+
+    </RadioGroup>
+
+    <!--<Switch-->
+        <!--android:id="@+id/switch2"-->
+        <!--android:layout_width="171dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@+id/editText2"-->
+        <!--android:layout_marginTop="7dp"-->
+        <!--android:text="Right Hand"-->
+        <!--android:layout_marginRight="@+id/switch1"-->
+        <!--android:layout_alignParentRight="true"/>-->
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="83dp"
+        android:background="@layout/round_shape"
+        android:text="Start"
+        />
+
+
+    <TextView
+        android:id="@+id/acceleration"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_below="@id/startbtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="X: Y: Z:"
+
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="Frequency rate"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/acceleration"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/frate"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="17sp"
+        android:inputType="number"
+      />
+
+    <TextView
+        android:id="@+id/trate"
+        android:layout_width="171dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/rate"
+        android:text="Tremor rate"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="17sp"
+         />
+
+    <EditText
+        android:id="@+id/tremorratee"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Record"
+        android:layout_marginTop="540dp"
+
+        android:background="@color/colorPrimary"/>
+
+
+
+
+</RelativeLayout>

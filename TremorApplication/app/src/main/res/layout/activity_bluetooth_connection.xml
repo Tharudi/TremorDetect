@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BluetoothConnection">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="401dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/tremord"
+        android:background="@drawable/tremorc" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/imageView5"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Patient Name"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="17sp" />
+    <RadioGroup
+        android:id="@+id/radiohand"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="140dp">
+
+        <RadioButton
+            android:id="@+id/radioright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Right Hand"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/radioleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weekno"
+            android:layout_marginStart="20dp"
+            android:checked="true"
+            android:text="Left Hand"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp" />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:enabled="true"
+        android:text="Strat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="364dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/btn_start"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:enabled="true"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="21dp"
+        android:hint="07/01/2019"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tremorTextView"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/btn_close"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Tremor Rate"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/TremorEditText"
+        android:layout_width="215dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/btn_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="21dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:text=""
+        android:textSize="17sp" />
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TremorEditText"
+        android:background="@color/colorPrimary"
+        android:text="Save Record" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/savebutton"/>
+
+</RelativeLayout>
